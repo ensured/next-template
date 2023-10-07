@@ -50,8 +50,8 @@ const CardForm = () => {
       <CardContent>
         <div className="flex flex-col space-y-4">
           <Input
-            type="email"
-            placeholder="Email"
+            type="text"
+            placeholder="Enter text here..."
             onChange={handleInputChange}
           />
           <Button
