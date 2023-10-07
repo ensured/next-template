@@ -25,14 +25,7 @@ const CardForm = () => {
   const [searchInput, setSearchInput] = useState("")
   const [output, setOutput] = useState("")
 
-  const getIsAvail = () => {
-    const data = fetch("https://bff.handle.me/handle/rap")
-    console.log(data)
-  }
-
   const handleFormSubmit = () => {
-    const isAvail = getIsAvail()
-    console.log(isAvail)
     try {
       inputSchema.parse({
         searchInput,
